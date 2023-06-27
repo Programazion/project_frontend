@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+<div id="form-container">
+
+    <h3>FORMULARIO</h3>
+    <br>
+    <br>
+    <form>
+        <div>
+            <label for="name">Nombre del libro</label>  
+            <input placeholder="Ingrese el nombre del libro" id="name" type="text" value="lorem abcd"   class="validate">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input placeholder="Ingrese el nombre del autor" id="author" type="text" value="lorem abcd" class="validate">
+            </div>
+            <div>
+            <label for="isbn">ISBN</label>
+                <input placeholder="Ingrese el codigo isbn" id="isbn" type="text" value="lorem abcd" class="validate">
+            </div>
+            <div>
+                <label for="edition">Edición</label>
+                <input placeholder="Edita Libro" id="edition" type="text" value="lorem abcd" class="validate">
+            </div>
+            <br>
+            <br>
+            <div>
+                <button class="btn waves-effect waves-light" type="button" id="save" onclick="saveBook()">Guardar
+                    <i class="material-icons right">send</i>
+                  </button>
+            </div>   
+    </form>
+     
+</div>
+
+     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
