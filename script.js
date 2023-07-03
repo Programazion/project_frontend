@@ -25,7 +25,10 @@ fetch(url,{
         "Content-Type": "application/json"
     },
     body: JSON.stringify(Book),
-})
+}).then(response =>{
+    console.log(response);
+
+});
 
 
     alert("Creación de libro");
