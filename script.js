@@ -1,37 +1,50 @@
 console.log("Loading Javascript");
 
-function saveBook(){
+function saveContacto(){
 
 
-let nameBook = document.getElementById("name");
-let authorBook = document.getElementById("author");
-let isbnBook = document.getElementById("isbn");
-let editionBook = document.getElementById("edition");
+let nombreContacto = document.getElementById("nombre");
+let apellidosContacto = document.getElementById("apellidos");
+let telefonoContacto = document.getElementById("telefono");
+let emailContacto = document.getElementById("email");
+let requerimientoContacto = document.getElementById("requerimiento");
 
-let Book ={
-    name:nameBook.value,
-    author:authorBook.value,
-    isbn:isbnBook.value,
-    edition:editionBook.value
+
+
+let contacto ={
+    nombre: nombreContacto.value,
+    apellidos: apellidosContacto.value,
+    telefono: telefonoContacto.value,
+    email: emailContacto.value,
+    requerimiento: requerimientoContacto.value
 }
 
-console.log(Book);
+console.log(contacto);
 
-let url= "http://localhost:8000/api/Book";
-
-fetch(url,{
+let url= "http://localhost:8000/api/respuesta";
+let params ={
     method:"POST",
     headers:{
         "Content-Type": "application/json"
     },
-    body: JSON.stringify(Book),
-}).then(response =>{
+    body: JSON.stringify(contacto),
+}
+fetch(url,params).then(response =>{
+
     console.log(response);
 
-});
+    if (response.status==201){
 
+        alert("Envío exitoso <<Pronto uno de nuestros agentes te contactará>>");
+    }else{
+    alert("Error en el envío intenta de nuevo");
+    }
 
-    alert("Creación de libro");
-
+});  
     return true
 }
+
+/* function getContacto(){
+
+let url= 
+} */

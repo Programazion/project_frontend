@@ -14,31 +14,34 @@
 </head>
 <body>
 <div id="form-container">
-
-    <h3>FORMULARIO</h3>
+    <h3>CONTACTO</h3>
     <br>
     <br>
     <form>
         <div>
-            <label for="name">Nombre del libro</label>  
-            <input placeholder="Ingrese el nombre del libro" id="name" type="text"   class="validate">
+            <label for="nombre">Nombre del Cliente</label>  
+            <input placeholder="Ingrese su nombre" id="nombre" type="text"   class="validate">
             </div>
             <div>
-                <label for="author">Author</label>
-                <input placeholder="Ingrese el nombre del autor" id="author" type="text" class="validate">
+                <label for="apellidos">Apellidos</label>
+                <input placeholder="Ingrese sus apellidos" id="apellidos" type="text" class="validate">
             </div>
             <div>
-            <label for="isbn">ISBN</label>
-                <input placeholder="Ingrese el codigo isbn" id="isbn" type="text" class="validate">
+            <label for="telefono">Telefono</label>
+                <input placeholder="Ingrese su Telefono" id="telefono" type="text" class="validate">
             </div>
             <div>
-                <label for="edition">Edición</label>
-                <input placeholder="Edita Libro" id="edition" type="text" class="validate">
+                <label for="email">Email</label>
+                <input placeholder="Ingrese su email" id="email" type="email" class="validate">
+            </div>
+            <div>
+                <label for="requerimiento">Requerimiento</label>
+                <input placeholder="Ingrese su petición" id="requerimiento" type="text" class="validate">
             </div>
             <br>
             <br>
             <div>
-                <button class="btn waves-effect waves-light" type="button" id="save" onclick="saveBook()">Guardar
+                <button class="btn waves-effect waves-light" type="button" id="save" onclick="saveContacto()">Enviar
                     <i class="material-icons right">send</i>
                   </button>
             </div>   
